@@ -44,7 +44,18 @@
       <nav class="bg-red-500 rounded-full">
         <div class="navbar">
           <div class="flex-1">
-            <a class="btn btn-ghost normal-case text-xl"></a>
+            <div class="flex flex-row gap-4 pl-4 text-white font-bold">
+              <h1>Home</h1>
+              <h1>About US</h1>
+              <h1>Shop</h1>
+              <h1>All Fruits</h1>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="flex justify-center items-center flex-row gap-2 py-5">
+              <div><img src="./images/logo.png" alt=""></div>
+              <h1 class="text-2xl text-white font-bold">Fruit Burst</h1>
+            </div>
           </div>
           <div class="flex-none gap-2">
             <div class="form-control">
@@ -148,7 +159,7 @@
         </div>
       </section>
       <!-- Fruit div  -->
-      <div class="bg-white relative w-3/4 mx-auto -top-28 shadow-xl rounded-lg hidden md:visible">
+      <div class="bg-white w-3/4 mx-auto -top-28 shadow-xl rounded-lg invisible absolute md:visible md:relative">
         <div class="grid sm:grid-cols-3 gap-4 items-center md:grid-cols-5">
             <!-- Fruit 1  -->
           <div class="p-3 pl-4">
@@ -183,7 +194,7 @@
     <!-- The main section  -->
     <main class="container mx-auto">
       <!-- Deal of the day  -->
-      <section class="flex flex-col md:flex-row gap-12 justify-center items-center mb-16">
+      <section class="flex flex-col md:flex-row gap-12 p-4 mx-auto justify-center items-center mb-16">
         <!-- This is deal content div  -->
         <div class="flex-1">
           <h1 class="text-5xl font-bold pb-5">Deal of the day</h1>
@@ -307,7 +318,7 @@
         <button class="btn mt-5 mb-10 bg-red-500 border-0 text-white">Shop All</button>
       </div>
       <!-- Team section  -->
-      <section class="w-full my-10">
+      <section class="w-full my-10 ml-5 md:ml-0">
         <div class="hero" style="background-image: url(./images/banner1.png);">
           <div class="hero-overlay bg-opacity-80"></div>
           <div class="hero-content text-center text-neutral-content">
@@ -318,7 +329,7 @@
               <div class="grid grid-col gap-8 md:grid-cols-2 lg:grid-cols-4">
                 <!-- card 1  -->
                 <div class="card shadow-xl">
-                  <img src="./images/member1.png" alt="" class="rounded-full" />
+                  <img src="./images/member1.png" alt="" class="w-1/2 mx-auto rounded-full" />
                   <div class="card-body items-center text-center">
                     <h2 class="card-title">Awlad Han</h2>
                     <p>Fruits Expert</p>
@@ -332,7 +343,7 @@
                 </div>
                 <!-- card 2  -->
                 <div class="card shadow-xl">
-                  <img src="./images/member2.png" alt="" class="rounded-full" />
+                  <img src="./images/member2.png" alt="" class="w-1/2 mx-auto rounded-full" />
                   <div class="card-body items-center text-center">
                     <h2 class="card-title">Safia Roy</h2>
                     <p>Fruits Expert</p>
@@ -346,7 +357,7 @@
                 </div>
                 <!-- card 3  -->
                 <div class="card shadow-xl">
-                  <img src="./images/member3.png" alt="" class="rounded-full" />
+                  <img src="./images/member3.png" alt="" class="w-1/2 mx-auto rounded-full" />
                   <div class="card-body items-center text-center">
                     <h2 class="card-title">Rokib Rm</h2>
                     <p>Fruits Expert</p>
@@ -360,7 +371,7 @@
                 </div>
                 <!-- card 4  -->
                 <div class="card shadow-xl">
-                  <img src="./images/member4.png" alt="" class="rounded-full" />
+                  <img src="./images/member4.png" alt="" class="w-1/2 mx-auto rounded-full" />
                   <div class="card-body items-center text-center">
                     <h2 class="card-title">Chaity</h2>
                     <p>Fruits Expert</p>
@@ -378,14 +389,14 @@
         </div>
       </section>
       <!-- Why Choose Us section  -->
-      <section class="my-16">
+      <section class="my-16 p-4">
         <div class="grid justify-items-center">
           <h1 class="text-5xl font-bold pb-2">Why Choose Us</h1>
-          <p class="w-1/2 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          <p class="w-full md:w-1/2 text-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
       </section>
       <!-- Choose us column  -->
-      <section class="grid mb-10 grid-col lg:grid-cols-3">
+      <section class="grid mb-10 grid-col p-4 lg:grid-cols-3">
         <div>
           <div class="flex flex-row gap-4">
             <div>
@@ -421,11 +432,11 @@
         <div>
           <img src="./images/whychoose1.png" alt="">
         </div>
-        <div class="">
+        <div class="py-4">
           <!-- row 1  -->
           <div class="flex flex-row-reverse gap-4">
             <div>
-              <img src="./images/group 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
+              <img src="./images/fruit 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
             </div>
             <div>
               <div>
@@ -442,12 +453,12 @@
           <!-- row 1  -->
           <div class="flex flex-row-reverse gap-4">
             <div>
-              <img src="./images/group 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
+              <img src="./images/ice-cream 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
             </div>
             <div>
               <div>
                 <div class="flex justify-end">
-                  <h1 class="text-xl font-bold">Integrated Supplier</h1>
+                  <h1 class="text-xl font-bold">Sustainable Practice</h1>
                 </div>
                 <div class="flex justify-end">
                   <div class="border-2 my-2 bg-slate-400 w-1/4"></div>
@@ -459,12 +470,12 @@
           <!-- row 1  -->
           <div class="flex flex-row-reverse gap-4">
             <div>
-              <img src="./images/group 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
+              <img src="./images/like 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
             </div>
             <div>
               <div>
                 <div class="flex justify-end">
-                  <h1 class="text-xl font-bold">Integrated Supplier</h1>
+                  <h1 class="text-xl font-bold">The Benefits Only</h1>
                 </div>
                 <div class="flex justify-end">
                   <div class="border-2 my-2 bg-slate-400 w-1/4"></div>
@@ -478,12 +489,12 @@
       </section>
     </main>
     <!-- The footer section  -->
-    <footer class="footer footer-center bg-black text-base-content rounded">
+    <footer class="footer footer-center p-4 mx-auto bg-black text-base-content rounded">
       <div class="flex flex-row gap-2 py-5">
         <div><img src="./images/logo.png" alt=""></div>
         <h1 class="text-xl text-white font-bold">Fruit Burst</h1>
       </div>
-      <div class="grid grid-cols-4 lg:grid-cols-6 gap-3 text-white font-bold text-xl pb-10">
+      <div class="grid grid-cols-4 lg:grid-cols-6 gap-3 text-white font-bold md:text-xl pb-8">
         <div>Home</div>
         <div>About US</div>
         <div>Shop</div>
@@ -491,7 +502,7 @@
         <div>Support</div>
         <div>My Account</div>
       </div>
-      <div class="grid grid-cols-3 lg:grid-cols-5 gap-3 pb-10">
+      <div class="flex">
         <img src="./images/facebook-icon.png" alt="">
         <img src="./images/youtube-icon.png" alt="">
         <img src="./images/twitter-icon (1).png" alt="">
