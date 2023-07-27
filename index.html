@@ -1,62 +1,188 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fruit Burst</title>
+    <!-- Google Fonts link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <!-- Tailwind and Daisy UI cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
     <!-- Tailwind custom classes  -->
     <script>
       tailwind.config = {
         theme: {
-          extend:{
-            colors:{
-              'button-bg-color': '#E76F51',
-            }
-          }
-        }
-      }
+          extend: {
+            colors: {
+              "button-bg-color": "#E76F51",
+            },
+          },
+        },
+      };
     </script>
-</head>
-<body class="">
+    <style>
+      .lato{
+        font-family: 'Lato', sans-serif;
+      }
+    </style>
+  </head>
+  <body class="container md:mx-auto lato">
     <!-- This is header section  -->
-    <header>
-        <!-- This is nevigation section(navbar) -->
-        <nav class="bg-red-500 rounded-full">
-            <div class="navbar">
-                <div class="flex-1">
-                  <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-                </div>
-                <div class="flex-none gap-2">
-                  <div class="form-control">
-                    <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-                  </div>
-                  <div class="dropdown dropdown-end">
-                    <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                    </label>
-                    <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                      <li>
-                        <a class="justify-between">
-                          Profile
-                          <span class="badge">New</span>
-                        </a>
-                      </li>
-                      <li><a>Settings</a></li>
-                      <li><a>Logout</a></li>
-                    </ul>
-                  </div>
+    <header class="px-4 py-8">
+      <!-- This is nevigation section(navbar) -->
+      <nav class="bg-red-500 rounded-full">
+        <div class="navbar">
+          <div class="flex-1">
+            <a class="btn btn-ghost normal-case text-xl"></a>
+          </div>
+          <div class="flex-none gap-2">
+            <div class="form-control">
+              <input
+                type="text"
+                placeholder="Search"
+                class="input input-bordered rounded-full w-24 md:w-auto"
+              />
+            </div>
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost btn-circle avatar">
+              </label>
+              <ul
+                tabindex="0"
+                class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 w-52"
+              >
+                <li>
+                  <a class="justify-between">
+                    Profile
+                    <span class="badge">New</span>
+                  </a>
+                </li>
+                <li><a>Settings</a></li>
+                <li><a>Logout</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- This is banner section  -->
+      <section class="">
+        <div class="carousel w-full py-10">
+          <!-- Carousel item 1  -->
+          <div id="slide1" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url(./images/banner1.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md py-14">
+                  <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5 font-semibold">We supply highly quality organic products</p>
+                  <button class="btn mt-5 mb-10 bg-red-500 border-0 text-white">Shop Now</button>
                 </div>
               </div>
-        </nav>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide4" class="btn btn-circle">❮</a> 
+              <a href="#slide2" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- Carousel item 2  -->
+          <div id="slide2" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url(./images/banner2.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md py-14">
+                  <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5 font-semibold">We supply highly quality organic products</p>
+                  <button class="btn mt-5 mb-10 bg-red-500 border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide1" class="btn btn-circle">❮</a> 
+              <a href="#slide3" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- Carousel item 3  -->
+          <div id="slide3" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url(./images/banner3.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md py-14">
+                  <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5 font-semibold">We supply highly quality organic products</p>
+                  <button class="btn mt-5 mb-10 bg-red-500 border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide2" class="btn btn-circle">❮</a> 
+              <a href="#slide4" class="btn btn-circle">❯</a>
+            </div>
+          </div> 
+          <!-- Carousel item 4  -->
+          <div id="slide4" class="carousel-item relative w-full">
+            <div class="hero" style="background-image: url(./images/banner4.png);">
+              <div class="hero-overlay bg-opacity-50"></div>
+              <div class="hero-content text-center text-neutral-content">
+                <div class="max-w-md py-14">
+                  <h1 class="mb-5 text-5xl font-extrabold">Exotic tastes at your doorstep</h1>
+                  <p class="mb-5 font-semibold">We supply highly quality organic products</p>
+                  <button class="btn mt-5 mb-10 bg-red-500 border-0 text-white">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+              <a href="#slide3" class="btn btn-circle">❮</a> 
+              <a href="#slide1" class="btn btn-circle">❯</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Fruit div  -->
+      <div class="grid sm:grid-cols-3 w-3/4 gap-4 items-center mx-auto md:grid-cols-5 bg-white relative -top-28">
+        <!-- Fruit 1  -->
+        <div>
+          <img src="./images/fruit1.png" alt="">
+          <h4>Red Grapes</h4>
+        </div>
+        <!-- Fruit 2  -->
+        <div>
+          <img src="./images/fruit2.png" alt="">
+          <h4>Orange</h4>
+        </div>
+        <!-- Fruit 3  -->
+        <div>
+          <img src="./images/fruit3.png" alt="">
+          <h4>Mango</h4>
+        </div>
+        <!-- Fruit 4  -->
+        <div>
+          <img src="./images/fruit4.png" alt="">
+          <h4>Strawberry</h4>
+        </div>
+        <!-- Fruit 5  -->
+        <div>
+          <img src="./images/fruit5.png" alt="">
+          <h4>Pomegranate</h4>
+        </div>
+      </div>
     </header>
+    <!-- The main section  -->
     <main>
 
     </main>
+    <!-- The footer section  -->
     <footer>
-    
+
     </footer>
-</body>
+  </body>
 </html>
