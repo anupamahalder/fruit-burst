@@ -148,37 +148,163 @@
         </div>
       </section>
       <!-- Fruit div  -->
-      <div class="grid sm:grid-cols-3 w-3/4 gap-4 items-center mx-auto md:grid-cols-5 bg-white relative -top-28">
-        <!-- Fruit 1  -->
-        <div>
-          <img src="./images/fruit1.png" alt="">
-          <h4>Red Grapes</h4>
+      <div class="bg-white relative w-3/4 mx-auto -top-28 shadow-xl rounded-lg ">
+        <div class="grid sm:grid-cols-3 gap-4 items-center md:grid-cols-5">
+            <!-- Fruit 1  -->
+          <div class="p-3 pl-4">
+            <img src="./images/fruit1.png" alt="">
+          </div>
+          <!-- Fruit 2  -->
+          <div class="p-3">
+            <img src="./images/fruit2.png" alt="">
+          </div>
+          <!-- Fruit 3  -->
+          <div class="p-3">
+            <img src="./images/fruit3.png" alt="">
+          </div>
+          <!-- Fruit 4  -->
+          <div class="p-3">
+            <img src="./images/fruit4.png" alt="">
+          </div>
+          <!-- Fruit 5  -->
+          <div class="p-3 pr-4">
+            <img src="./images/fruit5.png" alt="">
+          </div>
         </div>
-        <!-- Fruit 2  -->
-        <div>
-          <img src="./images/fruit2.png" alt="">
-          <h4>Orange</h4>
-        </div>
-        <!-- Fruit 3  -->
-        <div>
-          <img src="./images/fruit3.png" alt="">
-          <h4>Mango</h4>
-        </div>
-        <!-- Fruit 4  -->
-        <div>
-          <img src="./images/fruit4.png" alt="">
-          <h4>Strawberry</h4>
-        </div>
-        <!-- Fruit 5  -->
-        <div>
-          <img src="./images/fruit5.png" alt="">
-          <h4>Pomegranate</h4>
+        <div class="grid sm:grid-cols-3 gap-3 pl-6 pb-5 items-center md:grid-cols-5">
+          <h4 class="">Red Grapes</h4>
+          <h4 class="pl-2">Orange</h4>
+          <h4 class="pl-3">Mango</h4>
+          <h4 class="">Strawberry</h4>
+          <h4 class="">Pomegranate</h4>
         </div>
       </div>
     </header>
     <!-- The main section  -->
-    <main>
-
+    <main class="container mx-auto">
+      <!-- Deal of the day  -->
+      <section class="flex flex-col md:flex-row gap-12 justify-center items-center mb-16">
+        <!-- This is deal content div  -->
+        <div class="flex-1">
+          <h1 class="text-5xl font-bold pb-5">Deal of the day</h1>
+          <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+        <!-- This is countdown div  -->
+        <div class="flex-1">
+          <div class="grid grid-flow-col gap-3 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value:15;"></span>
+              </span>
+              Days
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">: 
+                <span style="--value:10;"></span>
+              </span>
+               Hours
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">:
+                <span style="--value:24;"></span>
+              </span>
+               Minutes
+            </div> 
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">:
+                <span style="--value:43;"></span>
+              </span>
+              Seconds
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Card section  -->
+      <section class="grid grid-cols-1 mx-3 my-10 gap-4 md:grid-cols-2 lg:grid-cols-4">
+        <!-- Card 1  -->
+        <div class="card shadow-xl border-2 text-slate-400 rounded-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit6.png" alt=""/>
+          </figure>
+          <div class="card-body items-center text-center">
+            <h1 class="font-bold">12.90$ - 18.85$</h1>
+            <div class="border-2 w-1/2 text-slate-400"></div>
+            <h2 class="card-title">Apple</h2>
+            <!-- Rating  -->
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <p class="text-xs text-red-600">Details</p>
+          </div>
+        </div>
+        <!-- Card 2  -->
+        <div class="card shadow-xl border-2 text-slate-400 rounded-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit7.png" alt="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h1 class="font-bold">12.90$ - 18.85$</h1>
+            <div class="border-2 w-1/2 text-slate-400"></div>
+            <h2 class="card-title">Orange</h2>
+            <!-- Rating  -->
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <p class="text-xs text-red-600">Details</p>
+          </div>
+        </div>
+        <!-- Card 3  -->
+        <div class="card shadow-xl border-2 text-slate-400 rounded-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit8.png" alt="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h1 class="font-bold">12.90$ - 18.85$</h1>
+            <div class="border-2 w-1/2 text-slate-400"></div>
+            <h2 class="card-title">Red Dragon</h2>
+            <!-- Rating  -->
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <p class="text-xs text-red-600">Details</p>
+          </div>
+        </div>
+        <!-- Card 4  -->
+        <div class="card shadow-xl border-2 text-slate-400 rounded-xl">
+          <figure class="px-10 pt-10">
+            <img src="./images/fruit9.png" alt="" />
+          </figure>
+          <div class="card-body items-center text-center">
+            <h1 class="font-bold">12.90$ - 18.85$</h1>
+            <div class="border-2 w-1/2 text-slate-400"></div>
+            <h2 class="card-title">Banana</h2>
+            <!-- Rating  -->
+            <div class="rating">
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" checked />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+              <input type="radio" name="rating-2" class="mask mask-star-2 bg-red-400" />
+            </div>
+            <p class="text-xs text-red-600">Details</p>
+          </div>
+        </div>
+      </section>
+      <div class="py-5 flex justify-center">
+        <button class="btn mt-5 mb-10 bg-red-500 border-0 text-white">Shop All</button>
+      </div>
     </main>
     <!-- The footer section  -->
     <footer>
