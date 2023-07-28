@@ -39,7 +39,7 @@
   </head>
   <body class="container md:mx-auto lato">
     <!-- This is header section  -->
-    <header class="px-4 py-8">
+    <header class="px-4 md:py-8">
       <!-- This is nevigation section(navbar) -->
       <nav class="bg-red-500 rounded-full invisible md:visible absolute md:relative">
         <div class="navbar">
@@ -51,15 +51,19 @@
               <h1>All Fruits</h1>
             </div>
           </div>
-          <div class="flex-1">
-            <div class="flex justify-center items-center flex-row gap-2 py-5">
+          <div class="flex flex-1 gap-5">
+            <div class="flex justify-center items-center flex-row gap-2">
               <div><img src="./images/logo.png" alt=""></div>
               <h1 class="text-2xl text-white font-bold">Fruit Burst</h1>
+            </div>
+            <div class="form-control">
+              <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
             </div>
           </div>
         </div>
       </nav>
-      <div class="navbar relative md:absolute visible md:invisible">
+      <!-- Navbar for mobile devices  -->
+      <div class="navbar relative md:absolute visible pt-0 md:invisible">
         <div class="flex-1">
           <div class="flex justify-center items-center flex-row gap-2 py-5">
             <div><img src="./images/logo.png" alt=""></div>
@@ -68,13 +72,13 @@
         </div>
         <div class="flex-none">
           <button class="btn btn-square btn-ghost">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"></path></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
           </button>
         </div>
       </div>
       <!-- This is banner section  -->
       <section class="">
-        <div class="carousel w-full py-10">
+        <div class="carousel w-full md:py-10">
           <!-- Carousel item 1  -->
           <div id="slide1" class="carousel-item relative w-full">
             <div class="hero" style="background-image: url(./images/banner1.png);">
@@ -386,8 +390,9 @@
       <section class="grid mb-10 grid-col p-4 lg:grid-cols-3">
         <div>
           <div class="flex flex-row gap-4">
-            <div>
-              <img src="./images/group 1.svg" class="bg-slate-500 w-16 rounded-full" alt="">
+            <div class="">
+              <img src="./images/Ellipse 2.svg" alt="">
+              <img src="./images/group 1.svg" class="relative bottom-7 left-1" alt="">
             </div>
             <div>
               <h1 class="text-xl font-bold">Dedicated Team</h1>
